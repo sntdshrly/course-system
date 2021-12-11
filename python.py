@@ -33,36 +33,36 @@ class Guru():
     emailGuru = ""
     def getGuru(self):
         pass
-    def viewInfoSiswa():
+    def viewInfoSiswa(self):
         pass
-    def addGuruBaru():
+    def addGuruBaru(self):
         pass
 
 class Administrator():
     idAdmin = ""
     namaAdmin = ""
-    def viewKursus():
+    def viewKursus(self):
         pass
-    def manageKursus():
+    def manageKursus(self):
         pass
 
 class Kursus():
     idKursus = ""
     namaKursus = ""
-    def addKursusBaru():
+    def addKursusBaru(self):
         pass
-    def deleteKursus():
+    def deleteKursus(self):
         pass
-    def getListKursus():
+    def getListKursus(self):
         pass
 
 class RegistrasiKursus():
     idKursus = ""
     namaKursus = ""
     dateRegistration = ""
-    def registrateKursus():
+    def registrateKursus(self):
         pass
-    def viewInfoKursus():
+    def viewInfoKursus(self):
         pass
 
 class Jadwal():
@@ -71,9 +71,9 @@ class Jadwal():
     idSiswa = ""
     idGuru = ""
     date = ""
-    def setJadwal():
+    def setJadwal(self):
         pass
-    def getJadwal():
+    def getJadwal(self):
         pass
 
 class Transaksi:
@@ -82,7 +82,7 @@ class Transaksi:
     idSiswa = ""
     amount = 0
     succeed = bool
-    def transact():
+    def transact(self):
         pass
-    def getSucceed():
+    def getSucceed(self):
         pass

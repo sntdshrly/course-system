@@ -5,11 +5,18 @@
     <title>Kursus</title>
 </head>
 <body>
-    <form method="post" action="/">
+    <form method="post" action="/insert">
         <label>
             <input type="text" name="nama">
         </label>
         <input type="submit">
     </form>
+    <ul>
+        {% for k in kursus %}
+        <li>{{k}}</li>
+        <a href="/update/{{k.idKursus}}">Update</a>
+        <a href="/delete/{{k.idKursus}}">Delete</a>
+        {% endfor %}
+    </ul>
 </body>
 </html>
