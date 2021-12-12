@@ -186,7 +186,7 @@ $date=date('Y-m-d');
                 </div> 
 
                 <footer class="footer text-right">
-                    copyright &copy; 2020 Wica Ananda
+                    copyright &copy; 2021 iSpeak! Language Centre
                 </footer>
 
             </div></div>
