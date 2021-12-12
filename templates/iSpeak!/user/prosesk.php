@@ -6,11 +6,11 @@
 
 	                            break;
                         case "hapus":
-mysql_query("DELETE FROM pengguna WHERE id='$_GET[id]'");
+mysql_query("DELETE FROM pengguna WHERE nik='$_GET[nik]'");
   header('location:../index.php?p=olahk');
 	                            break;
                         case "update":
-    mysql_query("UPDATE pengguna SET nama='$_POST[nama]' WHERE id='$_POST[id]'");
+    mysql_query("UPDATE pengguna SET nama='$_POST[nama]' WHERE nik='$_POST[nik]'");
 							 
   header('location:../index.php?p=olahk');  
 	}

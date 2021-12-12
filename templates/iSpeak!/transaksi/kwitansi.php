@@ -65,16 +65,16 @@ Class Kwitansi extends FPDF
 	function setValidasi($word){$this->notevalid=$word;}
 }
 /*Deklarasi variable untuk cetak*/
-$pt='AHMAD LAUNDRY';
-$jl='Jl. Helmarte Port No. 2 - Saint Heaven';
-$tel='021 - 9997724';
+$pt='iSpeak! Language Centre';
+$jl='Jl. Surya Sumantri 64, Bandung';
+$tel='022 - 2012186';
 $cash=$hasil['tarif'];
 $pembayar=$hasil['konsumen'];
 $tglambil= TanggalIndo($hasil['tgl_ambil']);
 $tgltransaksi= TanggalIndo($hasil['tgl_transaksi']);
 $admins='Admin';
-$payment='Jasa Laundry';
-$notevalid='validasi pembayaran dianggap sah bila disertai tanda tangan dan stempel';
+$payment='Kursus Bahasa Asing';
+$notevalid='Validasi pembayaran dianggap sah bila disertai tanda tangan dan stempel';
 /*parameter kertas*/
 $pdf=new Kwitansi('L','mm','A5');
 $fungsi=new Fungsi();

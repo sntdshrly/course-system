@@ -28,12 +28,12 @@ $tgl_transaksi=date('Y-m-d');
 		echo '
 		<b>Rincian Transaksi</b><br>
 		============================<Br>
-		Konsumen : <b>'.$konsumen.'</b><br>
-		Jenis Laundry : <b>'.$jeniss.'</b><br>
-		Berat : <b>'.$berat.' Kg</b><br>
+		Siswa : <b>'.$konsumen.'</b><br>
+		Mata Pelajaran : <b>'.$jeniss.'</b><br>
+		Total Waktu : <b>'.$berat.' Jam</b><br>
 		Tarif : <b>Rp. ' . number_format( $tarif, 0 , '' , '.' ) . ',-</b><br>
 		Tanggal Transaksi : <b>'.TanggalIndo($tgl_transaksi).'</b><br>
-		Tanggal Ambil : <b>'.TanggalIndo($tgl_ambil).'</b><br>
+		Tanggal Ambil Kursus: <b>'.TanggalIndo($tgl_ambil).'</b><br>
 		============================
 		</div>
 		';	
@@ -76,7 +76,7 @@ while($r2=mysql_fetch_array($tp2)){
 <label>Tanggal Kursus</label>
 <input type="date" class="form-control" name="tgl_ambil" required>
 </div>
-<pre>*Setiap transaksi lebih dari 500.000 akan mendapatkan potongan harga 10%</pre>
+<pre>*Setiap transaksi lebih dari 100.000 akan mendapatkan potongan harga 10%</pre>
 <button type="submit" class="btn btn-success waves-effect waves-light">Buat Transaksi</button>
 </form>
 </div>
