@@ -9,6 +9,7 @@ flask-sqlalchemy = "*"
 sqlalchemy = "*"
 pymysql = "*"
 flask-migrate = "*"
+gunicorn = "*"
 
 [dev-packages]
 
