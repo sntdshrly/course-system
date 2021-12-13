@@ -1,7 +1,7 @@
 {% extends 'layouts/main.html' %}
 
 {% block content %}
-<form method='post' action='/kursus/update'>
+<form method='post' action='/kursus/insert'>
     <div class="panel panel-border panel-success">
         <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-list"></i> Tambah Kuota</h3>
@@ -9,7 +9,7 @@
         <div class="panel-body">
             <div class="control-group">
                 <div class="form-group">
-                    <input type="hidden" name="id" value="{{kursus.idKursus}}">
+                    <input type="hidden" name="id">
                     <label>Nama Kursus</label>
                     <div class="span9"><input class="form-control" placeholder="Masukan Nama Kursus"  type="text" name="nama" value={{kursus}}></div>
                 </div>

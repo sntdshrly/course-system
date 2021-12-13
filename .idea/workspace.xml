@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1e258e5e-ed3a-4134-9198-21a4ce6c03b3" name="Changes" comment="2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/tambah_kursus.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/tambah_kursus.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +59,7 @@
       <recent name="C:\Users\ARYA\Project\Python\rpl\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.rpl">
+  <component name="RunManager" selected="Flask server.app">
     <configuration name="app" type="Python.FlaskServer">
       <option name="flaskDebug" value="true" />
       <module name="rpl" />
@@ -111,6 +112,7 @@
       <workItem from="1639372794090" duration="9100000" />
       <workItem from="1639385575808" duration="220000" />
       <workItem from="1639397314601" duration="4634000" />
+      <workItem from="1639404861882" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="pakai template">
       <created>1639382823720</created>
@@ -165,7 +167,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rpl$app.coverage" NAME="app Coverage Results" MODIFIED="1639402215358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rpl$app.coverage" NAME="app Coverage Results" MODIFIED="1639404925493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rpl$rpl.coverage" NAME="rpl Coverage Results" MODIFIED="1639402234305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
