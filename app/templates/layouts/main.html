@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RPL</title>
-    {% include 'import-css.html' %}
+    {% include 'layouts/import-css.html' %}
   </head>
   <body class="fixed-left">
     <!-- Begin page -->
     <div id="wrapper">
       <!-- Top Bar Start -->
-      {% include 'topbar.html' %}
+      {% include 'layouts/topbar.html' %}
       <!-- Top Bar End -->
 
       <!-- ========== Left Sidebar Start ========== -->
-      {% include 'sidebar.html' %}
+      {% include 'layouts/sidebar.html' %}
       <!-- ========== Left Sidebar End ========== -->
 
       <div class="content-page">
@@ -30,10 +30,10 @@
           </div>
         </div>
 
-        <footer class="footer text-right">copyright &copy; 2021 iSpeak! Language Centre</footer>
+        <footer class="footer text-right">Copyright &copy; 2021 iSpeak! Language Centre</footer>
       </div>
     </div>
 
-    {% include 'import-jss.html' }
+    {% include 'layouts/import-js.html' %}
   </body>
 </html>

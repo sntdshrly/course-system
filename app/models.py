@@ -12,6 +12,10 @@ class Kursus(db.Model):
         db.session.add(self)
         db.session.commit()
 
+    def editKursus(self, nama):
+        self.namaKursus = nama
+        db.session.commit()
+
     def deleteKursus(self):
         db.session.delete(self)
         db.session.commit()

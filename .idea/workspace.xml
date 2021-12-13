@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e258e5e-ed3a-4134-9198-21a4ce6c03b3" name="Changes" comment="" />
+    <list default="true" id="1e258e5e-ed3a-4134-9198-21a4ce6c03b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/kursus_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/kursus_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/import-css.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/import-css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/import-js.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/import-js.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/topbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/topbar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -31,6 +41,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="225by4pY0tk5hnzV6QqiPqAdQZR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,10 +54,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ARYA\Project\Python\rpl\static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ARYA\Project\Python\rpl\app" />
     </key>
@@ -99,14 +115,26 @@
       <workItem from="1639139463722" duration="7136000" />
       <workItem from="1639146693450" duration="4773000" />
       <workItem from="1639189997236" duration="10214000" />
+      <workItem from="1639372794090" duration="8952000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rpl$app.coverage" NAME="app Coverage Results" MODIFIED="1639198884962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rpl$app.coverage" NAME="app Coverage Results" MODIFIED="1639379555491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rpl$rpl.coverage" NAME="rpl Coverage Results" MODIFIED="1639190551691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
