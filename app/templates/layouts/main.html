@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPL</title>
+    {% include 'import-css.html' %}
+  </head>
+  <body class="fixed-left">
+    <!-- Begin page -->
+    <div id="wrapper">
+      <!-- Top Bar Start -->
+      {% include 'topbar.html' %}
+      <!-- Top Bar End -->
+
+      <!-- ========== Left Sidebar Start ========== -->
+      {% include 'sidebar.html' %}
+      <!-- ========== Left Sidebar End ========== -->
+
+      <div class="content-page">
+        <div class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4 class="pull-left page-title">iSpeak!</h4>
+              </div>
+            </div>
+            {% block content %} {% endblock %}
+          </div>
+        </div>
+
+        <footer class="footer text-right">copyright &copy; 2021 iSpeak! Language Centre</footer>
+      </div>
+    </div>
+
+    {% include 'import-jss.html' }
+  </body>
+</html>
