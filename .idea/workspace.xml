@@ -4,7 +4,7 @@
     <list default="true" id="1e258e5e-ed3a-4134-9198-21a4ce6c03b3" name="Changes" comment="2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/tambah_kursus.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/tambah_kursus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,8 @@
       <workItem from="1639372794090" duration="9100000" />
       <workItem from="1639385575808" duration="220000" />
       <workItem from="1639397314601" duration="4634000" />
-      <workItem from="1639404861882" duration="227000" />
+      <workItem from="1639404861882" duration="592000" />
+      <workItem from="1639456656133" duration="2777000" />
     </task>
     <task id="LOCAL-00001" summary="pakai template">
       <created>1639382823720</created>

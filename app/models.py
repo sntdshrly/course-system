@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 db = SQLAlchemy()
 
@@ -28,7 +29,6 @@ class Kursus(db.Model):
 
     def __repr__(self):
         return f"{self.namaKursus}"
-
 
 class Siswa(db.Model):
     __tablename__ = "siswa"
@@ -73,3 +73,83 @@ class Guru(db.Model):
     def addGuruBaru(self):
         db.session.add(self)
         db.session.commit()
+
+class Administrator(db.Model):
+    __tablename__ = "admin"
+
+    idAdmin = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    namaAdmin = db.Column(db.String(255), nullable=False)
+
+    def __init__(self, name):
+        self.namaAdmin = name
+
+    def viewKursus(self):
+        return Kursus.query.all()
+
+    def manageKursus(self, kursus: Kursus):
+        return kursus
+
+class RegistrasiKursus(db.Model):
+    __tablename__ = "registrasi"
+
+    idKursus = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    namaKursus = db.Column(db.String(255), nullable=False)
+    dateRegistration = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+
+    def __init__(self, id, nama, date=0):
+        self.idKursus = id
+        self.namaKursus= nama
+        self.dateRegistration = date
+
+    def registrateKursus(self, kursus: Kursus):
+        db.session.add(kursus)
+        db.session.commit()
+
+    def viewInfoKursus(self, id):
+        return Kursus.query.get(id)
+
+class Jadwal(db.Model):
+    __tablename__ = "jadwal"
+
+    idJadwal = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    idKursus = db.Column(db.Integer, db.ForeignKey('kursus.idKursus'), nullable=False)
+    kursus = db.relationship('kursus', backref=db.backref('jadwal', lazy=True))
+    idSiswa = db.Column(db.Integer, db.ForeignKey('siswa.idSiswa'), nullable=False)
+    siswa = db.relationship('siswa', backref=db.backref('jadwal', lazy=True))
+    idGuru = db.Column(db.Integer, db.ForeignKey('guru.idGuru'), nullable=False)
+    guru = db.relationship('guru', backref=db.backref('jadwal', lazy=True))
+    date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+
+    def __init__(self, kursus, siswa, guru, date=0):
+        self.kursus = kursus
+        self.siswa = siswa
+        self.guru = guru
+
+    def setJadwal(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def getJadwal(self):
+        return self
+
+class Transaksi(db.Model):
+    __tablename__ = "transaksi"
+
+    idTransaksi = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    idKursus = db.Column(db.Integer, db.ForeignKey('kursus.idKursus'), nullable=False)
+    kursus = db.relationship('kursus', backref=db.backref('jadwal', lazy=True))
+    idSiswa = db.Column(db.Integer, db.ForeignKey('siswa.idSiswa'), nullable=False)
+    siswa = db.relationship('siswa', backref=db.backref('jadwal', lazy=True))
+    amount = db.Column(db.Integer, nullable=False)
+    succeed = db.Column(db.Boolean, default=True)
+
+    def __init__(self, kursus, siswa, amount):
+        self.kursus = kursus
+        self.siswa = siswa
+        self.amount = amount
+
+    def transact(self):
+        self.succeed = not self.succeed
+
+    def getSucceed(self):
+        return self.succeed

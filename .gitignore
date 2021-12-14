@@ -3,3 +3,7 @@
 
 .idea
 __pycache__
+.idea/workspace.xml
+app/__pycache__/__init__.cpython-38.pyc
+app/__pycache__/models.cpython-38.pyc
+app/__pycache__/routes.cpython-38.pyc

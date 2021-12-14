@@ -2,6 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
+from app import routes, models
+
 app = Flask(__name__)
 app.config["SECRET_KEY"] = ""
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://webpk_28783064:wasdfer0918@sql202.freeweb.pk/webpk_28783064_rpl'
@@ -12,4 +14,4 @@ db = SQLAlchemy(app)
 db.init_app(app)
 migrate = Migrate(app, db)
 
-from app import routes, models
+db.create_all()
