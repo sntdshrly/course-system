@@ -1,7 +1,8 @@
+from app import app
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-db = SQLAlchemy()
+db = SQLAlchemy(app)
 
 class Kursus(db.Model):
     __tablename__ = "kursus"
@@ -113,11 +114,11 @@ class Jadwal(db.Model):
 
     idJadwal = db.Column(db.Integer, primary_key=True, autoincrement=True)
     idKursus = db.Column(db.Integer, db.ForeignKey('kursus.idKursus'), nullable=False)
-    kursus = db.relationship('kursus', backref=db.backref('jadwal', lazy=True))
+    kursus = db.relationship('Kursus', backref=db.backref('jadwal', lazy=True))
     idSiswa = db.Column(db.Integer, db.ForeignKey('siswa.idSiswa'), nullable=False)
-    siswa = db.relationship('siswa', backref=db.backref('jadwal', lazy=True))
+    siswa = db.relationship('Siswa', backref=db.backref('jadwal', lazy=True))
     idGuru = db.Column(db.Integer, db.ForeignKey('guru.idGuru'), nullable=False)
-    guru = db.relationship('guru', backref=db.backref('jadwal', lazy=True))
+    guru = db.relationship('Guru', backref=db.backref('jadwal', lazy=True))
     date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
     def __init__(self, kursus, siswa, guru, date=0):
@@ -137,9 +138,9 @@ class Transaksi(db.Model):
 
     idTransaksi = db.Column(db.Integer, primary_key=True, autoincrement=True)
     idKursus = db.Column(db.Integer, db.ForeignKey('kursus.idKursus'), nullable=False)
-    kursus = db.relationship('kursus', backref=db.backref('jadwal', lazy=True))
+    kursus = db.relationship('Kursus', backref=db.backref('transaksi', lazy=True))
     idSiswa = db.Column(db.Integer, db.ForeignKey('siswa.idSiswa'), nullable=False)
-    siswa = db.relationship('siswa', backref=db.backref('jadwal', lazy=True))
+    siswa = db.relationship('Siswa', backref=db.backref('transaksi', lazy=True))
     amount = db.Column(db.Integer, nullable=False)
     succeed = db.Column(db.Boolean, default=True)
 
@@ -153,3 +154,5 @@ class Transaksi(db.Model):
 
     def getSucceed(self):
         return self.succeed
+
+db.create_all()
