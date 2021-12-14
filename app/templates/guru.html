@@ -1,0 +1,36 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<div class='panel panel-border panel-success'>
+    <div class='panel-heading'>
+        <h3 class='panel-title'><i class='fa fa-list'></i> Guru</h3>
+    </div>
+    <div class='panel-body'>
+        <p align='right'><a class='btn btn-success' href='guru/create'><i class='fa fa-plus'></i> Tambah Guru</a></p>
+        <hr>
+        <table id='datatable' class='table table-hover'>
+            <thead>
+            <tr>
+                <th><i class='icon-terminal'></i> No</th>
+                <th><i class='icon-time'></i> Nama</th>
+                <th><i class='icon-time'></i> Email</th>
+                <th><i class='icon-chevron-right'></i> Aksi</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for s in guru %}
+                <tr>
+                    <td>{{s.idGuru}}</td>
+                    <td>{{s.namaGuru}}</td>
+                    <td>{{s.emailGuru}}</td>
+                    <td>
+                        <a class='btn btn-success' href='guru/update/{{ s.idGuru }}'><i class='icon-edit'></i>Ubah</a>
+                        <a class='btn btn-danger' href='guru/delete/{{ s.idGuru }}'><i class='icon-trash'></i>Hapus</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

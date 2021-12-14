@@ -26,7 +26,7 @@ def kursus_update(id=0):
         return redirect('/kursus')
     else:
         data = Kursus.query.get(id)
-        return render_template('tambah_kursus.html', kursus=data)
+        return render_template('edit_kursus.html', kursus=data)
 
 def kursus_delete(id):
     my_data = Kursus.query.get(id)

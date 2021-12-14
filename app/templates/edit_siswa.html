@@ -1,0 +1,32 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<form method='post' action='/siswa/update'>
+    <div class="panel panel-border panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-list"></i> Perbarui Siswa</h3>
+        </div>
+        <div class="panel-body">
+            <div class="control-group">
+                <div class="form-group">
+                    <input type="hidden" name="id" value={{siswa.idSiswa}}>
+                    <label>Nama Siswa</label>
+                    <div class="span"><input class="form-control" placeholder="Masukan Nama Siswa"  type="text" name="nama" value={{siswa}}></div>
+                </div>
+                <div class="form-group">
+                    <label>Alamat Siswa</label>
+                    <input class="form-control" placeholder="Masukan Alamat Siswa"  type="text" name="alamat" value={{siswa.alamatSiswa}}>
+                </div>
+                <div class="form-group">
+                    <label>Email Siswa</label>
+                    <input class="form-control" placeholder="Masukan Email Siswa"  type="text" name="email" value={{siswa.emailSiswa}}>
+                </div>
+
+                <Br>
+		    	<input type="submit" class="btn btn-success" value="Selesai">
+                <a class="btn btn-danger" href="/siswa">Batal</a>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

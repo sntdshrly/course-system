@@ -51,6 +51,16 @@ class Siswa(db.Model):
         db.session.add(self)
         db.session.commit()
 
+    def editSiswa(self, nama, alamat, email):
+        self.namaSiswa = nama
+        self.emailSiswa = email
+        self.alamatSiswa = alamat
+        db.session.commit()
+
+    def deleteSiswa(self):
+        db.session.delete(self)
+        db.session.commit()
+
     def __repr__(self):
         return f"{self.namaSiswa}"
 
@@ -73,6 +83,15 @@ class Guru(db.Model):
 
     def addGuruBaru(self):
         db.session.add(self)
+        db.session.commit()
+
+    def editGuru(self, nama, email):
+        self.namaGuru = nama
+        self.emailGuru = email
+        db.session.commit()
+
+    def deleteGuru(self):
+        db.session.delete(self)
         db.session.commit()
 
 class Administrator(db.Model):

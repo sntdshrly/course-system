@@ -1,15 +1,15 @@
 {% extends 'layouts/main.html' %}
 
 {% block content %}
-<form method='post' action='/kursus/insert'>
+<form method='post' action='/kursus/update'>
     <div class="panel panel-border panel-success">
         <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-list"></i> Tambah Kursus</h3>
+            <h3 class="panel-title"><i class="fa fa-list"></i> Perbarui Kursus</h3>
         </div>
         <div class="panel-body">
             <div class="control-group">
                 <div class="form-group">
-                    <input type="hidden" name="id">
+                    <input type="hidden" name="id" value={{kursus.idKursus}}>
                     <label>Nama Kursus</label>
                     <div class="span9"><input class="form-control" placeholder="Masukan Nama Kursus"  type="text" name="nama" value={{kursus}}></div>
                 </div>
