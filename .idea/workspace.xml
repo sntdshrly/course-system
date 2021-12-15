@@ -4,7 +4,10 @@
     <list default="true" id="1e258e5e-ed3a-4134-9198-21a4ce6c03b3" name="Changes" comment="2">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/layouts/topbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/topbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -33,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="225by4pY0tk5hnzV6QqiPqAdQZR" />
   <component name="ProjectLevelVcsManager">
@@ -59,7 +65,7 @@
       <recent name="C:\Users\ARYA\Project\Python\rpl\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Flask server.rpl">
+  <component name="RunManager" selected="Flask server.app">
     <configuration name="app" type="Python.FlaskServer">
       <option name="flaskDebug" value="true" />
       <module name="rpl" />
@@ -113,7 +119,8 @@
       <workItem from="1639385575808" duration="220000" />
       <workItem from="1639397314601" duration="4634000" />
       <workItem from="1639404861882" duration="592000" />
-      <workItem from="1639456656133" duration="9265000" />
+      <workItem from="1639456656133" duration="9394000" />
+      <workItem from="1639553302551" duration="8463000" />
     </task>
     <task id="LOCAL-00001" summary="pakai template">
       <created>1639382823720</created>
@@ -168,7 +175,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/rpl$app.coverage" NAME="app Coverage Results" MODIFIED="1639460695621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rpl$rpl.coverage" NAME="rpl Coverage Results" MODIFIED="1639461760700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rpl$app.coverage" NAME="app Coverage Results" MODIFIED="1639561696238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/rpl$rpl.coverage" NAME="rpl Coverage Results" MODIFIED="1639557303326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

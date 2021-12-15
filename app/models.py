@@ -106,6 +106,16 @@ class Administrator(db.Model):
     def viewKursus(self):
         return Kursus.query.all()
 
+    def editAdministrator(self, nama):
+        self.namaAdmin = nama
+        db.session.commit()
+
+    def deleteAdministrator(self):
+        db.session.delete(self)
+        db.session.commit()
+
+
+
     def manageKursus(self, kursus: Kursus):
         return kursus
 
@@ -140,13 +150,23 @@ class Jadwal(db.Model):
     guru = db.relationship('Guru', backref=db.backref('jadwal', lazy=True))
     date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
 
-    def __init__(self, kursus, siswa, guru, date=0):
+    def __init__(self, kursus, siswa, guru):
         self.kursus = kursus
         self.siswa = siswa
         self.guru = guru
 
     def setJadwal(self):
         db.session.add(self)
+        db.session.commit()
+
+    def editJadwal(self, kursus, guru, siswa):
+        self.kursus = kursus
+        self.guru = guru
+        self.siswa = siswa
+        db.session.commit()
+
+    def deleteJadwal(self):
+        db.session.delete(self)
         db.session.commit()
 
     def getJadwal(self):
@@ -163,6 +183,14 @@ class Transaksi(db.Model):
     amount = db.Column(db.Integer, nullable=False)
     succeed = db.Column(db.Boolean, default=True)
 
+    def tambahTransaksi(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def deleteTransaksi(self):
+        db.session.delete(self)
+        db.session.commit()
+
     def __init__(self, kursus, siswa, amount):
         self.kursus = kursus
         self.siswa = siswa
@@ -170,8 +198,7 @@ class Transaksi(db.Model):
 
     def transact(self):
         self.succeed = not self.succeed
+        db.session.commit()
 
     def getSucceed(self):
         return self.succeed
-
-db.create_all()
