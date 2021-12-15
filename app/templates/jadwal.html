@@ -1,0 +1,38 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<div class='panel panel-border panel-success'>
+    <div class='panel-heading'>
+        <h3 class='panel-title'><i class='fa fa-list'></i> Jadwal</h3>
+    </div>
+    <div class='panel-body'>
+        <p align='right'><a class='btn btn-success' href='jadwal/create'><i class='fa fa-plus'></i> Tambah Jadwal</a></p>
+        <hr>
+        <table id='datatable' class='table table-hover'>
+            <thead>
+            <tr>
+                <th><i class='icon-terminal'></i> No</th>
+                <th><i class='icon-time'></i> Nama Kursus</th>
+                <th><i class='icon-time'></i> Nama Guru</th>
+                <th><i class='icon-time'></i> Tanggal</th>
+                <th><i class='icon-chevron-right'></i> Aksi</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for k in jadwal %}
+                <tr>
+                    <td>{{k.idJadwal}}</td>
+                    <td>{{k.kursus.namaKursus}}</td>
+                    <td>{{k.guru.namaGuru}}</td>
+                    <td>{{k.date}}</td>
+                    <td>
+                        <a class='btn btn-success' href='jadwal/update/{{ k.idJadwal }}'><i class='icon-edit'></i>Ubah</a>
+                        <a class='btn btn-danger' href='jadwal/delete/{{ k.idJadwal }}'><i class='icon-trash'></i>Hapus</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

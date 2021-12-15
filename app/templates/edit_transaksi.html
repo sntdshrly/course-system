@@ -1,0 +1,26 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<form method='post' action='/transaksi/update'>
+    <div class="panel panel-border panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-list"></i> Perbarui Transaksi</h3>
+        </div>
+        <div class="panel-body">
+            <div class="control-group">
+                <input type="hidden" name="id" value={{transaksi.idTransaksi}}>
+                <div class="form-group">
+                    <label>Jumlah</label>
+                    <input class="form-control" placeholder="Masukan Jumlah"  type="number" name="amount" value={{transaksi.amount}} readonly>
+                </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <input class="form-control" type="checkbox" name="succeed" {{ "checked" if transaksi.succeed else "" }} disabled>
+                </div>
+		    	<input type="submit" class="btn btn-success" value="Selesai">
+                <a class="btn btn-danger" href="/transaksi">Batal</a>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

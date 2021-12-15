@@ -1,0 +1,40 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<div class='panel panel-border panel-success'>
+    <div class='panel-heading'>
+        <h3 class='panel-title'><i class='fa fa-list'></i> Transaksi</h3>
+    </div>
+    <div class='panel-body'>
+        <p align='right'><a class='btn btn-success' href='transaksi/create'><i class='fa fa-plus'></i> Tambah Transaksi</a></p>
+        <hr>
+        <table id='datatable' class='table table-hover'>
+            <thead>
+            <tr>
+                <th><i class='icon-terminal'></i> No</th>
+                <th><i class='icon-time'></i> Nama Kursus</th>
+                <th><i class='icon-time'></i> Nama Siswa</th>
+                <th><i class='icon-time'></i> Jumlah</th>
+                <th><i class='icon-time'></i> Status</th>
+                <th><i class='icon-chevron-right'></i> Aksi</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for t in transaksi %}
+                <tr>
+                    <td>{{t.idTransaksi}}</td>
+                    <td>{{t.kursus.namaKursus}}</td>
+                    <td>{{t.siswa.namaSiswa}}</td>
+                    <td>{{t.amount}}</td>
+                    <td>{{ "Sukses" if t.succeed else "Pending" }}</td>
+                    <td>
+                        <a class='btn btn-success' href='transaksi/update/{{ t.idTransaksi }}'><i class='icon-edit'></i>Ubah</a>
+                        <a class='btn btn-danger' href='transaksi/delete/{{ t.idTransaksi }}'><i class='icon-trash'></i>Hapus</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

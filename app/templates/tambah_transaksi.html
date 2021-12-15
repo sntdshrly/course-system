@@ -1,0 +1,37 @@
+{% extends 'layouts/main.html' %}
+
+{% block content %}
+<form method='post' action='/transaksi/insert'>
+    <div class="panel panel-border panel-success">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-list"></i> Tambah Transaksi</h3>
+        </div>
+        <div class="panel-body">
+            <div class="control-group">
+                <div class="form-group">
+                    <label>Kursus</label>
+                    <select  class="form-control" name="kursus">
+                        {% for k in kursus %}
+                        <option value={{k.idKursus}}>{{k.namaKursus}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Siswa</label>
+                    <select  class="form-control" name="siswa">
+                        {% for s in siswa %}
+                        <option value={{s.idSiswa}}>{{s.namaSiswa}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Jumlah</label>
+                    <input class="form-control" placeholder="Masukan Jumlah"  type="number" name="amount" >
+                </div>
+		    	<input type="submit" class="btn btn-success" value="Selesai">
+                <a class="btn btn-danger" href="/transaksi">Batal</a>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
