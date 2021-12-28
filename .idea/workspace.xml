@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e258e5e-ed3a-4134-9198-21a4ce6c03b3" name="Changes" comment="2">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/layouts/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/layouts/topbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/layouts/topbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +116,9 @@
       <workItem from="1639397314601" duration="4634000" />
       <workItem from="1639404861882" duration="592000" />
       <workItem from="1639456656133" duration="9394000" />
-      <workItem from="1639553302551" duration="8463000" />
+      <workItem from="1639553302551" duration="8756000" />
+      <workItem from="1639572840581" duration="2172000" />
+      <workItem from="1640664383035" duration="95000" />
     </task>
     <task id="LOCAL-00001" summary="pakai template">
       <created>1639382823720</created>
